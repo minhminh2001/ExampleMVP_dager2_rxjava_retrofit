@@ -21,9 +21,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
         ((UserApplication) getApplication()).getUserComponent().inject(this);
-
     }
-
     public abstract int getLayoutId();
 
 }
